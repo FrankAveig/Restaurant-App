@@ -1,0 +1,31 @@
+.navBar{
+    position: absolute;
+    display: flex;
+    align-items: center;
+    width: 100%;
+    justify-content: center;
+    background-color: #6e59558c;
+    height: 70px;
+    z-index: 1;
+    ul{
+        display: flex;
+        padding: 0;
+        a{
+            text-decoration: none;
+        }
+        li{
+            font-size: 12px;
+            list-style: none;
+            margin: auto 20px;
+            text-transform: uppercase;
+            color: white;
+
+        }
+    }
+    .registration{
+        position: absolute;
+        right: 10px;
+        
+    }
+    
+}
