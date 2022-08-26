@@ -1,0 +1,28 @@
+.CardMenu {
+  margin: auto 10px 20px 10px;
+  min-width: 250px;
+  max-width: 250px;
+  height: 300px;
+  border-radius: 25px;
+  background-color: rgba(0, 0, 0, 0.323);
+}
+.CardMenu .container {
+  padding: 20px;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+}
+.CardMenu .container img {
+  width: 150px;
+  border-radius: 100px;
+}
+.CardMenu .container .CardMenu__texto {
+  color: white;
+}

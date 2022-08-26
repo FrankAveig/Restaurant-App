@@ -1,9 +1,4 @@
-.body {
-  position: relative;
-}
-
 .main {
-  position: relative;
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
@@ -23,9 +18,21 @@
   -webkit-filter: contrast(70%);
           filter: contrast(70%);
 }
-.main p {
+.main h2 {
+  color: white;
+}
+.main .description {
+  width: 50%;
+  margin-bottom: 20px;
+}
+.main .description p {
+  text-align: center;
+  margin: auto;
   color: #fff;
 }
 .main .logo img {
   width: 350px;
+}
+.main .hide {
+  display: none !important;
 }

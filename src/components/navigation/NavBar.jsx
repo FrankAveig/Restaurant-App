@@ -1,5 +1,6 @@
 import React from 'react'
 import ButtonNav from '../buttons/ButtonNav'
+import {NavLink} from 'react-router-dom'
 import './styles/Navbar.css'
 const NavBar = () => {
  
@@ -7,14 +8,15 @@ const NavBar = () => {
     <>
         <nav className='navBar'>
             <ul>
-                <a href=""><li>About</li></a>
-                <a href=""><li>Menu</li></a>
-                <a href=""><li>Reservation</li></a>
+                <NavLink to="./"><li>Home</li></NavLink>
+                <NavLink to="./about"><li>About</li></NavLink>
+                <NavLink to="./menu"><li>Menu</li></NavLink>
+                <NavLink to="./reservation"><li>Reservation</li></NavLink>
                 <a href=""><li>Contact Us</li></a>
             </ul>
             <div className="registration">
-              <ButtonNav name='Login' action='login' />
-              <ButtonNav name='register'  action='register' />
+              <ButtonNav name='LOGIN' action='login' />
+              <ButtonNav name='REGISTER'  action='register' />
             </div>
         </nav>
     </>

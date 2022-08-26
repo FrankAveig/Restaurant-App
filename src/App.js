@@ -1,10 +1,9 @@
 import React from 'react'
-import HomePage from './pages/HomePage'
+import RestaurantRouter from './routers/RestaurantRouter'
 const App = () => {
   return (
     <>
-      <HomePage/>
-
+      <RestaurantRouter/>
     </>
   )
 }

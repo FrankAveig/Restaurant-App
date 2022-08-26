@@ -1,0 +1,22 @@
+
+.CardMenu{
+    margin: auto 10px 20px 10px ;
+    min-width: 250px;
+    max-width: 250px;
+    height: 300px;
+    border-radius: 25px;
+    background-color: rgba(0, 0, 0, 0.323);
+    .container{
+        padding: 20px;
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        img{
+            width: 150px;
+            border-radius: 100px;
+        }
+        .CardMenu__texto{
+            color: white;
+        }
+    }
+}
