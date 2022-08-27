@@ -9,7 +9,8 @@ const FormReservation = () => {
     <section className='reservation'>
     <h2>Reservation</h2>
         <form className='reservation__form'>
-            <input type="text" placeholder='Nombres' />
+            <input type="text" placeholder='Name' />
+            <input type="number" placeholder='Phone' />
             <input type="time" />
             <input type="date" />
         </form>

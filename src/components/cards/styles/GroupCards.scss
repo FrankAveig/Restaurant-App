@@ -4,9 +4,9 @@
     .cards{
         width: 100%;
         border-radius: 25px;
-        justify-content: center;
-        overflow-x: scroll;
+        overflow-x: auto;
         display: flex;
+
     }
     .cards::-webkit-scrollbar{ 
         width: 30px; 

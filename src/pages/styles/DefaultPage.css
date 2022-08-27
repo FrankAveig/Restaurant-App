@@ -36,3 +36,17 @@
 .main .hide {
   display: none !important;
 }
+
+.Container_FoodItem {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  width: 90%;
+  overflow-x: auto;
+}
+
+.container_addDish {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+}

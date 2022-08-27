@@ -13,6 +13,7 @@ const NavBar = () => {
                 <NavLink to="./reservation"><li>Reservation</li></NavLink>
                 <NavLink to="./menu"><li>Menu</li></NavLink>
                 <NavLink to="./contact"><li>Contact Us</li></NavLink>
+                <NavLink to="./New"><li>Menu Add</li></NavLink>
             </ul>
             <div className="registration">
               <ButtonNav name='LOGIN' action='login' />

@@ -6,6 +6,7 @@ import MenuPage  from '../pages/MenuPage';
 import NavBar from '../components/navigation/NavBar';
 import ReservationPage from '../pages/ReservationPage';
 import ContactPage from '../pages/ContactPage';
+import AddDish  from '../pages/AddDish';
 
 
 const RestaurantRouter = () => {
@@ -20,6 +21,7 @@ const RestaurantRouter = () => {
             <Route path='/menu' element={<MenuPage/>} />
             <Route path='/reservation' element={<ReservationPage/>} />
             <Route path='/contact' element={<ContactPage/>} />
+            <Route path='/new' element={<AddDish/>} />
 
             
         </Routes>

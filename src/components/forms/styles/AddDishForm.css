@@ -1,4 +1,4 @@
-.reservation {
+.addMenu {
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
@@ -12,18 +12,19 @@
   text-align: center;
   text-transform: uppercase;
 }
-.reservation button {
+.addMenu button {
   height: 30px;
   border-radius: 5px;
   border: none;
   cursor: pointer;
 }
-.reservation button:hover {
+.addMenu button:hover {
   background-color: white;
   color: black;
 }
-.reservation__form {
+.addMenu__form {
   text-align: center;
+  margin: 0 10px;
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
@@ -33,7 +34,7 @@
           flex-direction: column;
   margin-bottom: 10px;
 }
-.reservation__form input {
+.addMenu__form input, .addMenu__form textarea {
   margin: 5px 0;
   text-align: center;
   height: 30px;
@@ -42,21 +43,24 @@
   border: none;
   border-radius: 5px;
 }
-.reservation__form input::-webkit-input-placeholder {
+.addMenu__form textarea {
+  height: 100px;
+}
+.addMenu__form input::-webkit-input-placeholder {
   color: white;
 }
-.reservation__form input::-moz-placeholder {
+.addMenu__form input::-moz-placeholder {
   color: white;
 }
-.reservation__form input:-ms-input-placeholder {
+.addMenu__form input:-ms-input-placeholder {
   color: white;
 }
-.reservation__form input::-ms-input-placeholder {
+.addMenu__form input::-ms-input-placeholder {
   color: white;
 }
-.reservation__form input::placeholder {
+.addMenu__form input::placeholder {
   color: white;
 }
-.reservation__form input[type=number]::-webkit-inner-spin-button {
+.addMenu__form input[type=number]::-webkit-inner-spin-button {
   display: none;
 }
