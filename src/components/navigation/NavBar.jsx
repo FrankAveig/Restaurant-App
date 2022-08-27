@@ -10,9 +10,9 @@ const NavBar = () => {
             <ul>
                 <NavLink to="./"><li>Home</li></NavLink>
                 <NavLink to="./about"><li>About</li></NavLink>
-                <NavLink to="./menu"><li>Menu</li></NavLink>
                 <NavLink to="./reservation"><li>Reservation</li></NavLink>
-                <a href=""><li>Contact Us</li></a>
+                <NavLink to="./menu"><li>Menu</li></NavLink>
+                <NavLink to="./contact"><li>Contact Us</li></NavLink>
             </ul>
             <div className="registration">
               <ButtonNav name='LOGIN' action='login' />

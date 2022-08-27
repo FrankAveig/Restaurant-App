@@ -3,6 +3,7 @@ import ButtonReservation from '../components/buttons/ButtonReservation'
 import backgroundImage from "../assets/background2.png"
 import './styles/DefaultPage.css'
 import image from './../assets/logo-blanco.png'
+import { type } from '@testing-library/user-event/dist/type'
 
 const DefaultPage = (props) => {
   return (
@@ -11,8 +12,9 @@ const DefaultPage = (props) => {
         <section className={ props.actived==true ? 'logo':'hide'} >
             <img src={image} alt="logotipo"/>
         </section>
+
         {props.children}
-        <ButtonReservation/>
+        <ButtonReservation button={props.button} />
         <footer>
         </footer>
     </main>

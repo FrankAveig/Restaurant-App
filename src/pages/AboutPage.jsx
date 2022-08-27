@@ -3,7 +3,7 @@ import DefaultPage from './DefaultPage'
 
 const AboutPage = () => {
   return (
-    <DefaultPage  actived={true}>
+    <DefaultPage  actived={true} buttom={true}>
         <section className='description'>
             <p>
                 At the Frank's Restaurant there is a space dedicated to Italian cuisine, 

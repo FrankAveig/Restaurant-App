@@ -1,8 +1,8 @@
-.menu {
+.menuDishes {
   width: 95%;
   margin-bottom: 20px;
 }
-.menu .cards {
+.menuDishes .cards {
   width: 100%;
   border-radius: 25px;
   -webkit-box-pack: center;
@@ -13,17 +13,17 @@
   display: -ms-flexbox;
   display: flex;
 }
-.menu .cards::-webkit-scrollbar {
+.menuDishes .cards::-webkit-scrollbar {
   width: 30px;
   background-color: rgba(245, 245, 245, 0.3921568627);
   border-radius: 10px;
 }
-.menu .cards::-webkit-scrollbar-track {
+.menuDishes .cards::-webkit-scrollbar-track {
   -webkit-box-shadow: inset 0 0 6px rgba(0, 0, 0, 0.3);
   background-color: rgba(245, 245, 245, 0.5019607843);
   border-radius: 10px;
 }
-.menu .cards::-webkit-scrollbar-thumb {
+.menuDishes .cards::-webkit-scrollbar-thumb {
   border-radius: 10px;
   background-color: rgba(103, 73, 73, 0.5607843137);
   background-image: -webkit-linear-gradient(90deg, rgba(255, 255, 255, 0.2) 25%, transparent 25%, transparent 50%, rgba(255, 255, 255, 0.2) 50%, rgba(255, 255, 255, 0.2) 75%, transparent 75%, transparent);

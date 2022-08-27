@@ -1,4 +1,4 @@
-.menu{
+.menuDishes{
     width: 95%;
     margin-bottom: 20px;
     .cards{
@@ -8,8 +8,8 @@
         overflow-x: scroll;
         display: flex;
     }
-    .cards::-webkit-scrollbar{
-        width: 30px;
+    .cards::-webkit-scrollbar{ 
+        width: 30px; 
         background-color: #f5f5f564;
         border-radius: 10px;
     }
