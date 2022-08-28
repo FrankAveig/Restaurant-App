@@ -35,3 +35,84 @@
 .itemsFood h3 {
   margin: 0 0 5px 0;
 }
+
+.editMenu {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  text-align: center;
+  text-transform: uppercase;
+  position: absolute;
+  right: 0px;
+  left: 0;
+  top: 0;
+  bottom: 0;
+  background-color: rgba(255, 255, 255, 0.326);
+}
+.editMenu__form {
+  background: white;
+  padding: 25px;
+  border-radius: 20px;
+  text-align: center;
+  margin: 0 10px;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  margin-bottom: 10px;
+  width: 200px;
+  -ms-flex-item-align: center;
+      -ms-grid-row-align: center;
+      align-self: center;
+}
+.editMenu__form input, .editMenu__form textarea {
+  margin: 5px 0;
+  text-align: center;
+  height: 30px;
+  background-color: rgba(0, 0, 0, 0.612);
+  color: white;
+  border: none;
+  border-radius: 5px;
+}
+.editMenu__form textarea {
+  height: 100px;
+  height: 20px;
+}
+.editMenu__form input::-webkit-input-placeholder {
+  color: white;
+}
+.editMenu__form input::-moz-placeholder {
+  color: white;
+}
+.editMenu__form input:-ms-input-placeholder {
+  color: white;
+}
+.editMenu__form input::-ms-input-placeholder {
+  color: white;
+}
+.editMenu__form input::placeholder {
+  color: white;
+}
+.editMenu__form input[type=number]::-webkit-inner-spin-button {
+  display: none;
+}
+
+.hide {
+  display: none !important;
+}
+
+.show {
+  display: -webkit-box !important;
+  display: -ms-flexbox !important;
+  display: flex !important;
+}
