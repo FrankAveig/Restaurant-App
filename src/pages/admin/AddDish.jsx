@@ -1,8 +1,8 @@
 import React from 'react'
-import AddDishForm from '../components/forms/AddDishForm';
-import FoodItem from '../components/cards/FoodItem';
-import DefaultPage from './DefaultPage';
-import EditDishForm from '../components/forms/EditDishForm';
+import AddDishForm from '../../components/forms/AddDishForm';
+import FoodItem from '../../components/cards/FoodItem';
+import DefaultPage from '../DefaultPage';
+import EditDishForm from '../../components/forms/EditDishForm';
 
 
 

@@ -19,6 +19,7 @@ const RegisterForm = () => {
 
     const handleSubmit = async (e)=>{
         e.preventDefault();
+        setError('')
         try{
             await singUp(user.email,user.password)
             navigate('/')
@@ -39,7 +40,7 @@ const RegisterForm = () => {
 
         <form action="">
             <label htmlFor="email">email</label>
-            <input type="" name='email' placeholder='Email' onChange={handleChange}/>
+            <input type="email" name='email' placeholder='Email' onChange={handleChange}/>
 
             <label htmlFor="password">password</label>
             <input type="password" name='password' placeholder='password' onChange={handleChange} />

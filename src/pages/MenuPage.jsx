@@ -1,6 +1,7 @@
 import React from 'react'
 import DefaultPage from './DefaultPage'
 import GroupCards from '../components/cards/GroupCards'
+
 const MenuPage = () => {
   return (
     <DefaultPage actived={false} buttom={true}>
