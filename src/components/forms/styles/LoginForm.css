@@ -1,0 +1,64 @@
+.formulario form {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+}
+.formulario form button {
+  margin-top: 20px;
+}
+.formulario h1 {
+  color: white;
+  text-align: center;
+}
+.formulario ul {
+  padding: 0;
+}
+.formulario li {
+  color: white;
+  list-style: none;
+}
+.formulario a {
+  color: White;
+}
+
+input {
+  margin: 5px 0;
+  text-align: center;
+  height: 30px;
+  background-color: rgba(0, 0, 0, 0.612) !important;
+  color: white !important;
+  border: none;
+  border-radius: 5px;
+}
+input::-webkit-input-placeholder {
+  color: rgba(255, 255, 255, 0.527) !important;
+}
+input::-moz-placeholder {
+  color: rgba(255, 255, 255, 0.527) !important;
+}
+input:-ms-input-placeholder {
+  color: rgba(255, 255, 255, 0.527) !important;
+}
+input::-ms-input-placeholder {
+  color: rgba(255, 255, 255, 0.527) !important;
+}
+input::placeholder {
+  color: rgba(255, 255, 255, 0.527) !important;
+}
+
+.error {
+  background-color: rgba(255, 0, 0, 0.518);
+  border-radius: 10px;
+  width: 50%;
+}
+.error p {
+  color: white;
+  text-align: center;
+}

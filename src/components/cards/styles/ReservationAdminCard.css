@@ -1,0 +1,19 @@
+.reserv {
+  background-color: rgba(255, 255, 255, 0.529);
+  margin: 0 5px;
+  min-width: 200px;
+  border-radius: 10px;
+  padding: 20px;
+  text-align: center;
+  margin: 10px 10px;
+  height: -webkit-min-content;
+  height: -moz-min-content;
+  height: min-content;
+}
+.reserv p {
+  margin: 4px;
+}
+.reserv h6 {
+  margin: 4px;
+  font-size: 16px;
+}

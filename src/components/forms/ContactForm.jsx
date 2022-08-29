@@ -2,10 +2,11 @@ import React from 'react'
 import './styles/ContactForm.css'
 const ContactForm = () => {
     const enviar = ()=>alert('enviado');
+
   return (
     <section className="formulario_main ">
     <div className="container">
-                <form id="formulario" className="formulario">
+                <form id="formulario" action="mailto:xfpad_93@gmail.com" className="formulario">
                     <h2>Contáctanos</h2>
                     <div className="box-input">
                         <input name="nombre" id="nombre" type="text" required placeholder="Nombre" />
@@ -22,7 +23,7 @@ const ContactForm = () => {
                     <div className="box-input">
                         <textarea name="comentarios" id="comentarios" rows={4} cols={40} placeholder="Describe aquí tu consulta" defaultValue={""} />
                     </div>
-                    <button id="submit" type="button" className="boton" onClick={enviar}><i className="fab fa-whatsapp" /> Enviar WhatsApp</button>
+                    <button id="submit" type="submit" className="boton" ><i className="fab fa-whatsapp" /> Enviar </button>
                 </form>
     </div>
 </section>

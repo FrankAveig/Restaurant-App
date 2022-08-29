@@ -1,0 +1,47 @@
+.formulario{
+    form{
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        button{
+            margin-top: 20px;
+        }
+    }
+    h1{
+        color: white;
+        text-align: center;
+    }
+    ul{
+        padding: 0;
+    }
+    li{
+        color: white;
+        list-style: none;
+    }
+    a{
+        color: White;
+    }
+
+}
+input{
+    margin: 5px 0;
+    text-align: center;
+    height: 30px;
+    background-color: rgba(0, 0, 0, 0.612)!important;
+    color: white!important;
+    border: none;
+    border-radius: 5px;
+    &::placeholder{
+        color: rgba(255, 255, 255, 0.527)!important;
+    }
+}
+
+.error{
+    background-color: rgba(255, 0, 0, 0.518);
+    border-radius: 10px;
+    width: 50%;
+    p{
+        color: white;
+        text-align: center;
+    }
+}

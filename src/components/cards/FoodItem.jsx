@@ -41,7 +41,6 @@ const FoodItem = () => {
        
         id=idDish;
         
-        console.log(form);
     }
 
 
@@ -65,7 +64,6 @@ const FoodItem = () => {
         await updateDoc(documento, form);
         editMenu.current.style.visibility="hidden"
 
-        console.log('me ejecute update')
       };
 
       const getDish = async (idDish) => {

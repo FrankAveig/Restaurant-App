@@ -68,3 +68,26 @@
   margin-right: 2px;
   opacity: 0.9;
 }
+
+.reservation__container {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  width: 90%;
+  overflow-x: auto;
+}
+.reservation__container .reserv {
+  background-color: rgba(255, 255, 255, 0.529);
+  margin: 0 5px;
+  min-width: 200px;
+  border-radius: 10px;
+  padding: 20px;
+  text-align: center;
+}
+.reservation__container .reserv p {
+  margin: 4px;
+}
+.reservation__container .reserv h6 {
+  margin: 4px;
+  font-size: 16px;
+}

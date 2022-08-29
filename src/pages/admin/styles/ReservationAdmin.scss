@@ -1,0 +1,11 @@
+h1{
+    color: white;
+    text-transform: uppercase;
+}
+.reservations{
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    height: 70vh;
+    overflow-y: auto;
+}

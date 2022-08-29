@@ -12,16 +12,17 @@ import LoginPage from '../pages/no-users/LoginPage';
 import { UserRouter } from './UserRouter';
 import NavAdmin from '../components/navigation/NavAdmin';
 import ReservationNoUserPage from '../pages/no-users/ReservationNoUserPage';
+import NavUsers from '../components/navigation/NavUsers';
+import ReservationAdmin from '../pages/admin/ReservationAdmin';
 
 const RestaurantRouter = () => {
   
   const {user} = useAuth() 
-  console.log(user) 
   return (
     <BrowserRouter>
               
               <header>
-                {user?[user.email==='ab@a.com'?< NavAdmin user={user.email} key='admin'/>:<h1>eres  user</h1>]:<NavBar/>}
+                {user?[user.email==='admin@admin.com'?< NavAdmin user={user.email} key='admin'/>:< NavUsers user={user.email} key='user'/>]:<NavBar/>}
                 </header>
         
                 <Routes>
@@ -35,6 +36,7 @@ const RestaurantRouter = () => {
                     {/* Rutas Protegidas */}
                     <Route path='/new' element={<UserRouter><AddDish/></UserRouter>} /> 
                     <Route path='/reservation' element={<UserRouter><ReservationPage/></UserRouter>} />
+                    <Route path='/reservationadmin' element={<UserRouter><ReservationAdmin/></UserRouter>} />
                 </Routes>
     
           </BrowserRouter>

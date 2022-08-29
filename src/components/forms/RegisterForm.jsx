@@ -1,6 +1,6 @@
 import{useState} from 'react'
 import {  useAuth} from "../../context/authContext";
-import{useNavigate } from 'react-router-dom'
+import{useNavigate,NavLink } from 'react-router-dom'
 
 const RegisterForm = () => {
     const[user,setUser] = useState({
@@ -34,20 +34,26 @@ const RegisterForm = () => {
 
     return (
         
+<>
+          <div className="error" style={{ visibility:error?'visible':'hidden'}}  >
+             {error?<p>{error}</p>:<p></p>}
+            </div>
+        <section className='formulario'>
 
-    <section onSubmit={handleSubmit} className='formulario'>
-        {error?<p>{error}</p>:<p></p>}
+        <form  onSubmit={handleSubmit} action="">
+        <h1>REGISTER</h1>
 
-        <form action="">
-            <label htmlFor="email">email</label>
             <input type="email" name='email' placeholder='Email' onChange={handleChange}/>
 
-            <label htmlFor="password">password</label>
             <input type="password" name='password' placeholder='password' onChange={handleChange} />
 
-            <button type='submit'>Register</button>
+            <button style={{cursor:'pointer'}} type='submit'>Register</button>
         </form>
+        <ul>
+            <li>If you already have an account  <NavLink to="/login">Log in</NavLink></li>
+        </ul>
     </section>
+</>
     )
 }
 

@@ -44,3 +44,24 @@
         }
     }
 }
+
+.reservation__container{
+    display: flex;
+    width: 90%;
+    overflow-x: auto;
+    .reserv{
+        background-color: rgba(255, 255, 255, 0.529);
+        margin: 0 5px;
+        min-width: 200px;
+        border-radius: 10px;
+        padding: 20px;
+        text-align: center;
+        p{
+            margin: 4px;
+        }
+        h6{
+            margin: 4px;
+            font-size: 16px;
+        }
+    }
+}

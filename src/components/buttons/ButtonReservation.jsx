@@ -1,4 +1,4 @@
-import React from 'react'
+import {useState} from 'react'
 import './styles/ButtonReservation.css'
 
 
@@ -8,7 +8,11 @@ const ButtonReservation = (props) => {
   }
 
   return (
-    <button className={ props.button==true ? 'buttonReservation':'hide'}   onClick={reservation}>Reeservation</button>
+    <>
+
+   
+ 
+    </>
   )
 }
 

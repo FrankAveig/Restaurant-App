@@ -12,16 +12,19 @@ const DefaultPage = (props) => {
     
     <main className='main' style={{backgroundImage:`url(${backgroundImage})`}}>
         
+        <div className="space"></div>
      
         <section className={ props.actived==true ? 'logo':'hide'} >
             <img src={image} alt="logotipo"/>
         </section>
-
         {props.children}
+
         <ButtonReservation button={props.button} />
-        <footer>
-        </footer>
+        <div className="space-min"></div>
     </main>
+        <footer>
+          <h2>Developed by: Frank Aveiga</h2>
+        </footer>
     </>
   )
 }

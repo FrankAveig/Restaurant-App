@@ -1,8 +1,7 @@
 import React from 'react'
 import {NavLink,useNavigate} from 'react-router-dom'
-import './styles/Navbar.css'
 import { useAuth } from '../../context/authContext'
-const NavAdmin = (props) => {
+const NavUsers = (props) => {
     const{user,logout,loading}=useAuth();
     const navigate = useNavigate();
     const handleLogout =async ()=>{
@@ -10,14 +9,16 @@ const NavAdmin = (props) => {
       navigate('/');
       if(loading) return <h1>Loading</h1>
     }
+
   return (
-    <nav className='navBar'>
+    <>
+        <nav className='navBar'>
             <ul>
                 <NavLink to="./"><li>Home</li></NavLink>
                 <NavLink to="./about"><li>About</li></NavLink>
-                <NavLink to="./reservationadmin"><li>Reservation</li></NavLink>
+                <NavLink to="./reservation"><li>Reservation</li></NavLink>
                 <NavLink to="./menu"><li>Menu</li></NavLink>
-                <NavLink to="./New"><li>Edit Dishes</li></NavLink>
+                <NavLink to="./contact"><li>Contact Us</li></NavLink>
             </ul>
             <div className="registration">
               <ul>
@@ -26,7 +27,8 @@ const NavAdmin = (props) => {
               </ul>
             </div>
         </nav>
+    </>
   )
 }
 
-export default NavAdmin
+export default NavUsers

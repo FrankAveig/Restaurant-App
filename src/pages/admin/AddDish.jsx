@@ -9,6 +9,7 @@ import EditDishForm from '../../components/forms/EditDishForm';
  const AddDish = () => {
   return (
     <DefaultPage  actived={false} button={false}>
+          <h2>Add Dish</h2>
         <div className="container_addDish">
             <AddDishForm />
         </div>

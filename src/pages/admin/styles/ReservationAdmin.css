@@ -1,0 +1,17 @@
+h1 {
+  color: white;
+  text-transform: uppercase;
+}
+
+.reservations {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -ms-flex-wrap: wrap;
+      flex-wrap: wrap;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  height: 70vh;
+  overflow-y: auto;
+}

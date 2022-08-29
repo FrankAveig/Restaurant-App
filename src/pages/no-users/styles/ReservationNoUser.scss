@@ -3,5 +3,15 @@
     text-align: center;
     background-color: rgba(255, 255, 255, 0.486);
     border-radius: 10px;
-    
+    .buttons{
+        margin-bottom: 20px;
+        button{
+            margin: 0 5px;
+            width: 100px;
+            height: 30px;
+            border: none;
+            border-radius: 5px;
+            cursor: pointer;
+        }
+    }
 }

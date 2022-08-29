@@ -1,4 +1,6 @@
-
+body{
+    height: 100%;
+}
 .main{
     display: flex;
     flex-direction: column;
@@ -8,21 +10,29 @@
     width: 100%;
     height: 100vh;
     filter: contrast(70%);
+    @media (max-width:800px) {
+    }
     h2{
         color: white;
     }
     .description{
         width: 50%;
         margin-bottom:20px;
-      p{      
-          text-align: center;
-          margin: auto;
-          color: #fff;
-      } 
+        @media(max-width:800px){
+            width: 80%;
+        }
+        p{      
+            text-align: center;
+            margin: auto;
+            color: #fff;
+        } 
     }
     .logo{
         img{
             width: 350px;
+            @media (max-width:800px) {
+                width: 250px;
+            }
         }
     }
     .hide{
@@ -35,8 +45,42 @@
     display: flex;
     width: 90%;
     overflow-x: auto;
+    @media (max-width:800px) {
+        margin-bottom: -50px!important;
+    }
 }
 .container_addDish{
     display: flex;
     
+}
+.space{
+    margin-top: 150px;
+    display: none;
+    @media (max-width:800px) {
+        display: block;
+    }
+}
+
+.space-min{
+    margin-top: 50px;
+    display: none;
+    @media (max-width:800px) {
+        display: block;
+    }
+}
+
+footer{
+    text-align: center;
+    background-color: #6e595564;
+    position: absolute;
+    bottom: 0;
+    width: 100%;
+    font-size: 10px;
+    color: white;
+   @media (max-width:800px) {
+    position: unset;
+    display: flex;
+    background-color: #6e5955;
+    justify-content: center;
+   }
 }
