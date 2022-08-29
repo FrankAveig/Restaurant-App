@@ -84,9 +84,26 @@
   border: none;
   border-radius: 5px;
 }
-.editMenu__form textarea {
-  height: 100px;
-  height: 20px;
+.editMenu__form .buttonsEdit {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+}
+.editMenu__form .buttonsEdit button {
+  width: 80px;
+  height: 30px;
+  background-color: rgb(199, 195, 195);
+  margin: 15px 10px 0 10px;
+  border-radius: 5px;
+  border: none;
+  cursor: pointer;
+}
+.editMenu__form .buttonsEdit button:hover {
+  -webkit-filter: brightness(1.1);
+          filter: brightness(1.1);
 }
 .editMenu__form input::-webkit-input-placeholder {
   color: white;

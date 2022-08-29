@@ -12,6 +12,7 @@ import EditDishForm from '../components/forms/EditDishForm';
         <div className="container_addDish">
             <AddDishForm />
         </div>
+        <h2>Existing menu</h2>
             <div className="Container_FoodItem">
                 <FoodItem/> 
             </div>

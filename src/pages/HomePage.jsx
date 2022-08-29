@@ -2,6 +2,7 @@ import React from 'react'
 import DefaultPage from './DefaultPage'
 
 const HomePage = () => {
+ 
   return (
     <DefaultPage  actived={true} button={true}>
         <section className='description'>

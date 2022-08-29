@@ -1,11 +1,15 @@
-import React from 'react'
 import RestaurantRouter from './routers/RestaurantRouter'
+import React, { useState } from "react";
+import { AuthProvider } from "./context/authContext";
+
 const App = () => {
+
 
   return (
     <>
-            <RestaurantRouter/>
-
+    <AuthProvider>
+     <RestaurantRouter/>
+    </AuthProvider>
     </>
   )
 }

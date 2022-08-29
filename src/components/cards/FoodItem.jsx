@@ -83,7 +83,10 @@ const FoodItem = () => {
                             <input type="text" ref={refName} onChange={(e) => setForm({ ...form, name: e.target.value })} />
                             <input type="text" ref={refUrl} placeholder='URL IMG' onChange={(e) => setForm({ ...form, img: e.target.value })} />
                             <input type="text" ref={refDescription} placeholder='Description' onChange={(e) => setForm({ ...form, description: e.target.value })}/>
-                            <button type="button" onClick={()=>updateDish(id)}>Edit Dish</button>
+                            <div className="buttonsEdit">
+                                <button type="button" onClick={()=>updateDish(id)}>Edit Dish</button>
+                                <button type="button" onClick={()=>editMenu.current.style.visibility="hidden"}>Close</button>
+                            </div>
                     </form>
         </div>
     {dishes.map((dish) =>{
